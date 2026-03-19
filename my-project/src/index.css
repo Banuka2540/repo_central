@@ -2,4 +2,19 @@
 @import "tailwindcss";
 @theme {
   --font-serif: "Instrument Serif", serif;
+  @keyframes gradient-x {
+    0%, 100% { 
+      background-size: 200% 200%; 
+      background-position: left center; 
+    
+    }
+    50% { 
+      background-size: 250% 250%; 
+      background-position: right center; 
+    
+    }
+  }
+
+  /* Map the keyframes to a utility name */
+  --animate-gradient-x: gradient-x 5s ease infinite;
 }

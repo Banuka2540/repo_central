@@ -6,8 +6,8 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div className='min-h-screen bg-gray-100'>
+    <> 
+      <div className='min-h-screen bg-gradient-to-r from-gray-200 via-gray-100 to-cyan-100 animate-gradient-x'>
         <nav className='flex items-center p-4 shadow-sm shadow-gray-200'>
           <div className="flex-2 items-center gap-2">
             <span className="text-xl font-bold tracking-tight">GitLearn</span>
