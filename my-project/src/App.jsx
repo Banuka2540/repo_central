@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import { SimpleCard } from './components/cards'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -29,8 +30,11 @@ function App() {
           </div>
 
         </div>
-        <div className='flex justify-content items-center h-screen'>
-          <p className='text-4xl'>Welcome to my app!</p>
+        <div className='flex justify-center items-center h-screen ml-10 gap-8'>
+          <SimpleCard />
+          <SimpleCard />
+          <SimpleCard />
+          
         </div>
       </div>
     </>
