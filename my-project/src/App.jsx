@@ -6,8 +6,8 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <> 
-      <div className='min-h-screen bg-gradient-to-r from-gray-200 via-gray-100 to-cyan-100 animate-gradient-x'>
+    <>
+      <div className='min-h-screen bg-linear-to-r from-gray-200 via-gray-100 to-cyan-100 animate-gradient-x'>
         <nav className='flex items-center p-4 shadow-sm shadow-gray-200'>
           <div className="flex-2 items-center gap-2">
             <span className="text-xl font-bold tracking-tight">GitLearn</span>
@@ -30,11 +30,35 @@ function App() {
           </div>
 
         </div>
-        <div className='flex justify-center items-center h-screen ml-10 gap-8'>
+        <div className='flex justify-center items-center ml-10 flex-wrap gap-8'>
+
+          <SimpleCard
+            title="React Framework"
+            description="A popular framework for building user interfaces."
+            buttonText="Explore"
+          />
+          <SimpleCard
+            title="Tailwind CSS"
+            description="Utility-first CSS framework for rapid UI development."
+            buttonText="Docs"
+          />
+          <SimpleCard
+            title="Vite"
+            description="Next generation frontend tooling. It's fast!"
+            buttonText="Try Now"
+          />
+          <SimpleCard
+            title=" daisyUI"
+            description="The most popular component library for Tailwind CSS."
+            buttonText="Components"
+          />
+          <SimpleCard
+            title="Node.js"
+            description="JavaScript runtime built on Chrome's V8 engine."
+            buttonText="Download"
+          />
           <SimpleCard />
-          <SimpleCard />
-          <SimpleCard />
-          
+
         </div>
       </div>
     </>
